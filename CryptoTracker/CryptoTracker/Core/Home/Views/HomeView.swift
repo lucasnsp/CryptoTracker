@@ -16,7 +16,12 @@ struct HomeView: View {
             
             // content layer
             VStack {
-                Text("Header")
+                HStack {
+                    CircleButtonView(iconName: "info")
+                    Text("Header")
+                    CircleButtonView(iconName: "chvevron.right")
+                }
+                
                 Spacer(minLength: 0)
             }
         }
