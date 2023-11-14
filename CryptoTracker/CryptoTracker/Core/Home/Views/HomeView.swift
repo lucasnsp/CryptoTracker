@@ -21,6 +21,9 @@ struct HomeView: View {
             VStack {
                 HStack {
                     CircleButtonView(iconName: showPortfolio ? "plus" : "info")
+                        .background(
+                            CircleButtonAnimationView(animate: $showPortfolio)
+                        )
                     Spacer()
                     Text(showPortfolio ? "Portfolio" : "Live Prices")
                         .font(.headline)
