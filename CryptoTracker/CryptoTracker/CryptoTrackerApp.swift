@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CryptoTrackerApp: App {
     
-    @StateObject var vm = HomeViewModel()
+    @StateObject private var vm = HomeViewModel()
     
     var body: some Scene {
         WindowGroup {
