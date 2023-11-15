@@ -23,7 +23,9 @@ struct HomeView: View {
                 homeHeader
                 
                 List {
-                    CoinRowView(coin: DeveloperPreview.instance.coin, showHoldingsColumn: false)
+                    ForEach(vm.allCoins) { coin in
+                        CoinRowView(coin: coin, showHoldingsColumn: false)
+                    }
                 }
                 .listStyle(PlainListStyle())
                 
@@ -38,6 +40,7 @@ struct HomeView: View {
         HomeView()
             .toolbar(.hidden)
     }
+    .environmentObject(DeveloperPreview.instance.homeVM)
 }
 
 extension HomeView {
