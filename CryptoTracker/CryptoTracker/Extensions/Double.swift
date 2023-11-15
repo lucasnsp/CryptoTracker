@@ -18,9 +18,10 @@ extension Double {
     private var currencyFormatter6: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
-//        formatter.locale = .current // <- default value
-//        formatter.currencyCode = "usd" // <- change currency
-//        formatter.currencySymbol = "$" // <- change currency symbol
+        formatter.usesGroupingSeparator = true
+        formatter.locale = .autoupdatingCurrent
+        formatter.currencyCode = "usd" // <- change currency
+        formatter.currencySymbol = "$" // <- change currency symbol
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 6
         return formatter
@@ -34,7 +35,7 @@ extension Double {
     /// ```
     public func asCurrencyWith6Decimals() -> String {
         let number = NSNumber(value: self)
-        return currencyFormatter6.string(from: number) ?? "0.00"
+        return currencyFormatter6.string(from: number) ?? "$0.00"
     }
     
     /// Converts a Double into a string representation
