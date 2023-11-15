@@ -36,4 +36,21 @@ extension Double {
         let number = NSNumber(value: self)
         return currencyFormatter6.string(from: number) ?? "0.00"
     }
+    
+    /// Converts a Double into a string representation
+    /// ```
+    ///  Convert 1.23456 to "1.23"
+    /// ```
+    public func asNumberString() -> String {
+        return String(format: "%.2f", self)
+    }
+    
+    
+    /// Converts a Double into a string representation with percent symbol
+    /// ```
+    ///  Convert 1.23456 to "1.23%"
+    /// ```
+    public func asPercentageString() -> String {
+        return asNumberString() + "%"
+    }
 }
