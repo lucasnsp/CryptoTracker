@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		463FA69F2B081D4500E4ADC0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */; };
+		463FA6A12B08252F00E4ADC0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A02B08252F00E4ADC0 /* UIApplication.swift */; };
 		46ACBF3D2B03A8B4001886BC /* CryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACBF3C2B03A8B4001886BC /* CryptoTrackerApp.swift */; };
 		46ACBF3F2B03A8B4001886BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACBF3E2B03A8B4001886BC /* ContentView.swift */; };
 		46ACBF442B03A8B5001886BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46ACBF432B03A8B5001886BC /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		463FA6A02B08252F00E4ADC0 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		46ACBF392B03A8B4001886BC /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46ACBF3C2B03A8B4001886BC /* CryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerApp.swift; sourceTree = "<group>"; };
 		46ACBF3E2B03A8B4001886BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				46ACBF4D2B03ABC9001886BC /* Color.swift */,
 				46D1F8772B053DF900CECE42 /* PreviewProvider.swift */,
 				46D1F8792B05442800CECE42 /* Double.swift */,
+				463FA6A02B08252F00E4ADC0 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				46ACBF3F2B03A8B4001886BC /* ContentView.swift in Sources */,
 				46ACBF542B03B012001886BC /* HomeView.swift in Sources */,
 				46BF72412B065B0E00F82894 /* CoinImageView.swift in Sources */,
+				463FA6A12B08252F00E4ADC0 /* UIApplication.swift in Sources */,
 				46ACBF3D2B03A8B4001886BC /* CryptoTrackerApp.swift in Sources */,
 				46ACBF582B03B2FD001886BC /* CircleButtonView.swift in Sources */,
 				463FA69F2B081D4500E4ADC0 /* SearchBarView.swift in Sources */,
