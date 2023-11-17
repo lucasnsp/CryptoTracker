@@ -23,7 +23,24 @@ class HomeViewModel: ObservableObject {
     }
     
     func addSubscribers() {
-        dataService.$allCoins
+        
+        // updates allCoins
+        $searchText
+            .combineLatest(dataService.$allCoins)
+            .map { (text, startingCoins) -> [CoinModel] in
+                
+                guard !text.isEmpty else {
+                    return startingCoins
+                }
+                
+                let lowercasedText = text.lowercased()
+                
+                return startingCoins.filter { coin in
+                    return  coin.name.lowercased().contains(lowercasedText) ||
+                            coin.symbol.lowercased().contains(lowercasedText) ||
+                            coin.id.lowercased().contains(lowercasedText)
+                }
+            }
             .sink { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
             }
