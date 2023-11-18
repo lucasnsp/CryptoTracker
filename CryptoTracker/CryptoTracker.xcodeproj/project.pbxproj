@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		463FA69F2B081D4500E4ADC0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */; };
 		463FA6A12B08252F00E4ADC0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A02B08252F00E4ADC0 /* UIApplication.swift */; };
+		463FA6A32B083ACE00E4ADC0 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A22B083ACE00E4ADC0 /* StatisticModel.swift */; };
+		463FA6A62B083C7900E4ADC0 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A52B083C7900E4ADC0 /* StatisticView.swift */; };
 		46ACBF3D2B03A8B4001886BC /* CryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACBF3C2B03A8B4001886BC /* CryptoTrackerApp.swift */; };
 		46ACBF3F2B03A8B4001886BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACBF3E2B03A8B4001886BC /* ContentView.swift */; };
 		46ACBF442B03A8B5001886BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46ACBF432B03A8B5001886BC /* Preview Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		463FA6A02B08252F00E4ADC0 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		463FA6A22B083ACE00E4ADC0 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		463FA6A52B083C7900E4ADC0 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		46ACBF392B03A8B4001886BC /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46ACBF3C2B03A8B4001886BC /* CryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerApp.swift; sourceTree = "<group>"; };
 		46ACBF3E2B03A8B4001886BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,14 @@
 				463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */,
 			);
 			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		463FA6A42B083C4D00E4ADC0 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				463FA6A52B083C7900E4ADC0 /* StatisticView.swift */,
+			);
+			path = Statistic;
 			sourceTree = "<group>";
 		};
 		46ACBF302B03A8B3001886BC = {
@@ -167,6 +179,7 @@
 				46BF723F2B065B0100F82894 /* CoinImage */,
 				46ACBF562B03B2ED001886BC /* CircleButton */,
 				463FA69D2B081D2A00E4ADC0 /* SearchBar */,
+				463FA6A42B083C4D00E4ADC0 /* Statistic */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				46D1F8732B052FB100CECE42 /* CoinModel.swift */,
+				463FA6A22B083ACE00E4ADC0 /* StatisticModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,12 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463FA6A32B083ACE00E4ADC0 /* StatisticModel.swift in Sources */,
 				46BF72452B065B6100F82894 /* CoinImageViewModel.swift in Sources */,
 				46D1F87F2B056D4600CECE42 /* CoinDataService.swift in Sources */,
 				46D1F8762B053D3400CECE42 /* CoinRowView.swift in Sources */,
 				46D1F87C2B055B0300CECE42 /* HomeViewModel.swift in Sources */,
 				46BF72492B06B19E00F82894 /* LocalFileManager.swift in Sources */,
 				46ACBF3F2B03A8B4001886BC /* ContentView.swift in Sources */,
+				463FA6A62B083C7900E4ADC0 /* StatisticView.swift in Sources */,
 				46ACBF542B03B012001886BC /* HomeView.swift in Sources */,
 				46BF72412B065B0E00F82894 /* CoinImageView.swift in Sources */,
 				463FA6A12B08252F00E4ADC0 /* UIApplication.swift in Sources */,
