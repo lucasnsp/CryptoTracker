@@ -26,7 +26,7 @@ struct PortfolioView: View {
                     }
                 }
             }
-            .navigationTitle("Edit Portfolio")
+            .navigationTitle("Edit Portfolio")            
             .toolbar(content: {
                 ToolbarItem(placement: .topBarLeading) {
                     XMarkButton()
@@ -117,5 +117,33 @@ extension PortfolioView {
             )
         }
         .font(.headline)
+    }
+    
+    private func saveButtonPressed() {
+        
+        guard let coin =  selectedCoin else { return }
+        
+        // save to portfolio
+        
+        // show checkmark
+        withAnimation(.easeIn) {
+            showCheckmark = true
+            removeSelectedCoin()
+        }
+        
+        // hide keyboard
+        UIApplication.shared.endEditing()
+        
+        // hide checkmark
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            withAnimation(.easeOut) {
+                showCheckmark = false
+            }
+        }
+    }
+    
+    private func removeSelectedCoin() {
+        selectedCoin = nil
+        vm.searchText = ""
     }
 }
