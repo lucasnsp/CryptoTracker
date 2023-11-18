@@ -187,4 +187,18 @@ struct MarketDataModel: Codable {
         }
         return ""
     }
+    
+    var volume: String {
+        if let item = totalVolume.first(where: { $0.key == "usd" }) {
+            return "\(item.value)"
+        }
+        return ""
+    }
+    
+    var btcDominance: String {
+        if let item = marketCapPercentage.first(where: { $0.key == "btc" }) {
+            return item.value.asPercentageString()
+        }
+        return ""
+    }
 }
