@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462E5B6E2B0916950005AE2A /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5B6D2B0916950005AE2A /* PortfolioView.swift */; };
 		463FA69F2B081D4500E4ADC0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */; };
 		463FA6A12B08252F00E4ADC0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A02B08252F00E4ADC0 /* UIApplication.swift */; };
 		463FA6A32B083ACE00E4ADC0 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A22B083ACE00E4ADC0 /* StatisticModel.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		462E5B6D2B0916950005AE2A /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		463FA6A02B08252F00E4ADC0 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		463FA6A22B083ACE00E4ADC0 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				46ACBF532B03B012001886BC /* HomeView.swift */,
 				463FA6A72B08423900E4ADC0 /* HomeStatsView.swift */,
 				46D1F8752B053D3400CECE42 /* CoinRowView.swift */,
+				462E5B6D2B0916950005AE2A /* PortfolioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				46BF723E2B064DFC00F82894 /* NetworkingManager.swift in Sources */,
 				46ACBF5A2B03BC67001886BC /* CircleButtonAnimationView.swift in Sources */,
 				46D1F8782B053DF900CECE42 /* PreviewProvider.swift in Sources */,
+				462E5B6E2B0916950005AE2A /* PortfolioView.swift in Sources */,
 				46D1F87A2B05442800CECE42 /* Double.swift in Sources */,
 				46BF72472B065E3800F82894 /* CoinImageService.swift in Sources */,
 				46D1F8742B052FB100CECE42 /* CoinModel.swift in Sources */,
