@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct PortfolioView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        Text("Portfolio View!!")
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Hi")
+                }
+            }
+            .navigationTitle("Edit Portfolio")
+            .toolbar(content: {
+                ToolbarItem(placement: .topBarLeading) {
+                    XMarkButton()
+                }
+            })
+        }
     }
 }
 

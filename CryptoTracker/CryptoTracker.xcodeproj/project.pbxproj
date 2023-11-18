@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		462E5B6E2B0916950005AE2A /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5B6D2B0916950005AE2A /* PortfolioView.swift */; };
+		462E5B722B091B980005AE2A /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5B712B091B980005AE2A /* XMarkButton.swift */; };
 		463FA69F2B081D4500E4ADC0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */; };
 		463FA6A12B08252F00E4ADC0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A02B08252F00E4ADC0 /* UIApplication.swift */; };
 		463FA6A32B083ACE00E4ADC0 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FA6A22B083ACE00E4ADC0 /* StatisticModel.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		462E5B6D2B0916950005AE2A /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		462E5B712B091B980005AE2A /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		463FA69E2B081D4400E4ADC0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		463FA6A02B08252F00E4ADC0 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		463FA6A22B083ACE00E4ADC0 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		462E5B702B091B690005AE2A /* XMarkButton */ = {
+			isa = PBXGroup;
+			children = (
+				462E5B712B091B980005AE2A /* XMarkButton.swift */,
+			);
+			path = XMarkButton;
+			sourceTree = "<group>";
+		};
 		463FA69D2B081D2A00E4ADC0 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 				46ACBF562B03B2ED001886BC /* CircleButton */,
 				463FA69D2B081D2A00E4ADC0 /* SearchBar */,
 				463FA6A42B083C4D00E4ADC0 /* Statistic */,
+				462E5B702B091B690005AE2A /* XMarkButton */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -313,6 +324,7 @@
 				463FA6A32B083ACE00E4ADC0 /* StatisticModel.swift in Sources */,
 				46BF72452B065B6100F82894 /* CoinImageViewModel.swift in Sources */,
 				46D1F87F2B056D4600CECE42 /* CoinDataService.swift in Sources */,
+				462E5B722B091B980005AE2A /* XMarkButton.swift in Sources */,
 				46D1F8762B053D3400CECE42 /* CoinRowView.swift in Sources */,
 				46D1F87C2B055B0300CECE42 /* HomeViewModel.swift in Sources */,
 				46BF72492B06B19E00F82894 /* LocalFileManager.swift in Sources */,
