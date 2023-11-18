@@ -36,5 +36,5 @@ struct StatisticView: View {
 }
 
 #Preview {
-    StatisticView(stat: DeveloperPreview.instance.stat1)
+    StatisticView(stat: DeveloperPreview.instance.stat2)
 }
