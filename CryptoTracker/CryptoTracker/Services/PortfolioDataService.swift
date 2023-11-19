@@ -22,6 +22,21 @@ class PortfolioDataService {
             if let error = error {
                 print("Error loading CoreData! \(error)")
             }
+            self.getPortfolio()
+        }
+    }
+    // MARK: PUBLIC
+    
+    public func updatePortfolio(coin: CoinModel, amount: Double) {
+        // Check if coin is already in portfolio
+        if let entity = savedEntities.first(where: { $0.coinID == coin.id }) {
+            if amount > 0 {
+                update(entity: entity, amount: amount)
+            } else {
+                delete(entity: entity)
+            }
+        } else {
+            add(coin: coin, amount: amount)
         }
     }
     
