@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461BB6E62B0BCF1200E2BAA1 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461BB6E52B0BCF1200E2BAA1 /* HapticManager.swift */; };
 		462E5B6E2B0916950005AE2A /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5B6D2B0916950005AE2A /* PortfolioView.swift */; };
 		462E5B722B091B980005AE2A /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5B712B091B980005AE2A /* XMarkButton.swift */; };
 		462E5B742B0933880005AE2A /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5B732B0933880005AE2A /* CoinLogoView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		461BB6E52B0BCF1200E2BAA1 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		462E5B6D2B0916950005AE2A /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		462E5B712B091B980005AE2A /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		462E5B732B0933880005AE2A /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			children = (
 				46BF723D2B064DFC00F82894 /* NetworkingManager.swift */,
 				46BF72482B06B19E00F82894 /* LocalFileManager.swift */,
+				461BB6E52B0BCF1200E2BAA1 /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				463FA6A12B08252F00E4ADC0 /* UIApplication.swift in Sources */,
 				46ACBF3D2B03A8B4001886BC /* CryptoTrackerApp.swift in Sources */,
 				46ACBF582B03B2FD001886BC /* CircleButtonView.swift in Sources */,
+				461BB6E62B0BCF1200E2BAA1 /* HapticManager.swift in Sources */,
 				463FA69F2B081D4500E4ADC0 /* SearchBarView.swift in Sources */,
 				46ACBF4E2B03ABC9001886BC /* Color.swift in Sources */,
 				462E5B742B0933880005AE2A /* CoinLogoView.swift in Sources */,
