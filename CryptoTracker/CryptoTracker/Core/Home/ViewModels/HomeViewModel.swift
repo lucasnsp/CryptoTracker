@@ -41,15 +41,7 @@ class HomeViewModel: ObservableObject {
         // updates portfolioCoins
         $allCoins
             .combineLatest(portfolioDataService.$savedEntities)
-            .map { (coinModels, portfolioEntities) -> [CoinModel] in
-                coinModels
-                    .compactMap { (coin) -> CoinModel? in
-                        guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id }) else {
-                            return nil
-                        }
-                        return coin.updateHoldins(amount: entity.amount)
-                    }
-            }
+            .map(mapAllCoinsToPortfolioCoins)
             .sink { [weak self] (returnedCoins) in
                 self?.portfolioCoins = returnedCoins
             }
@@ -64,8 +56,6 @@ class HomeViewModel: ObservableObject {
                 self?.statistics = returnedStats
             }
             .store(in: &cancellables)
-        
-        
     }
     
     func updatePortfolio(coin: CoinModel, amount: Double) {
@@ -84,6 +74,16 @@ class HomeViewModel: ObservableObject {
                     coin.symbol.lowercased().contains(lowercasedText) ||
                     coin.id.lowercased().contains(lowercasedText)
         }
+    }
+    
+    private func mapAllCoinsToPortfolioCoins(allCoins: [CoinModel], portfolioEntities: [PortfolioEntity]) -> [CoinModel] {
+        allCoins
+            .compactMap { (coin) -> CoinModel? in
+                guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id }) else {
+                    return nil
+                }
+                return coin.updateHoldins(amount: entity.amount)
+            }
     }
     
     private func mapGlobalMarketData(marketDataModel: MarketDataModel?, portfolioCoins: [CoinModel]) -> [StatisticModel] {
