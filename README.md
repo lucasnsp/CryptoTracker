@@ -12,6 +12,9 @@ https://www.coingecko.com/pt
 
 ![Design sem nome (16)](https://github.com/lucasnsp/UpYou/assets/122572631/d429b304-0a94-4854-b09a-45caf004c9d2)
 
+- **Portfolio Management**:
+
+![711](https://github.com/lucasnsp/UpYou/assets/122572631/4eceae03-8b76-4290-b45c-cee3fe119219)
 
 ## Architecture
 
