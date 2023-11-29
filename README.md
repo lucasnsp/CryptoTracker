@@ -18,7 +18,7 @@ https://www.coingecko.com/pt
 
 ## Architecture
 
-The UpYou app follows the MVVM (Model-View-ViewModel) architecture pattern to separate concerns and maintain a clean and organized codebase:
+The CryptoTracker app follows the MVVM (Model-View-ViewModel) architecture pattern to separate concerns and maintain a clean and organized codebase:
 
 - **Model**: Represents the data of the app to decode after to display in the view and comunicate with the viewModel.
 
