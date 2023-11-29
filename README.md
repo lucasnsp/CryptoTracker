@@ -6,6 +6,13 @@ CryptoTracker is a comprehensive application designed to streamline the manageme
 
 https://www.coingecko.com/pt
 
+## Screenshots
+
+- **Live prices & Portfolio**:
+
+![Design sem nome (16)](https://github.com/lucasnsp/UpYou/assets/122572631/d429b304-0a94-4854-b09a-45caf004c9d2)
+
+
 ## Architecture
 
 The UpYou app follows the MVVM (Model-View-ViewModel) architecture pattern to separate concerns and maintain a clean and organized codebase:
