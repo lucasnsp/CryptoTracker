@@ -1,4 +1,5 @@
 # Crypto Tracker 
+
 CryptoTracker is a comprehensive application designed to streamline the management of your cryptocurrency portfolio while providing real-time market insights.
 
 ## API 
