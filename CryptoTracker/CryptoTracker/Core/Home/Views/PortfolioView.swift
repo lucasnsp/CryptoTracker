@@ -57,7 +57,7 @@ extension PortfolioView {
             LazyHStack(spacing: 10) {
                 ForEach(vm.searchText.isEmpty ? vm.portfolioCoins : vm.allCoins) { coin in
                     CoinLogoView(coin: coin)
-                        .frame(width: 75)
+                        .frame(width: 70)
                         .padding(4)
                         .onTapGesture {
                             withAnimation(.easeIn) {
